@@ -7,7 +7,7 @@ public class FotocopiadoraPrincipal {
         System.out.println("Ingrese la cantidad de copias que desea imprimir:");
         int cantidadCopias = scanner.nextInt();
 
-        // Crear instancia de Fotocopiadora
+
         Fotocopiadora fotocopiadora = new Fotocopiadora(cantidadCopias);
 
         // Mostrar resultados
