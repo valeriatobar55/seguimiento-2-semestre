@@ -4,6 +4,7 @@ public class imparparprincipal {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Imparparprincipal imparparprincipal = New Imparparprincipal 
         System.out.println("Digite su nombre: ");
         String nombre = sc.nextLine();
 
