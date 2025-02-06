@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class CalculoApoyo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitar datos de la persona
+        System.out.println("Ingrese el género (F para femenino, M para masculino):");
+        char genero = scanner.next().toUpperCase().charAt(0);
+        
+        System.out.println("Ingrese la edad:");
+        int edad = scanner.nextInt();
+        
+        // Calcular el apoyo
+        double apoyo = calcularApoyo(genero, edad);
+        
+        // Mostrar resultado
+        System.out.println("El apoyo mensual es: $" + apoyo);
+        
+        scanner.close();
+    }
+    
+    public static double calcularApoyo(char genero, int edad) {
+        if (genero == 'F') {
+            if (edad > 50) {
+                return 120000;
+            } else if (edad >= 30 && edad <= 50) {
+                return 100000;
+            }
+        } else if (genero == 'M') {
+            return 40000;
+        }
+        
+        return 0; // En caso de que no cumpla ninguna condición
+    }
+}
