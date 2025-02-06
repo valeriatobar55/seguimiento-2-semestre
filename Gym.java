@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
-public class GymCalculator {
+public class GymCalculadora {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Definir los precios de los planes
+        // se define los precios 
         final int PRECIO_15_DIAS = 18000;
         final int PRECIO_30_DIAS = 35000;
         final int PRECIO_3_MESES = 86000;
         
-        // Mostrar menú de opciones
+        // menú opciones 
         System.out.println("Bienvenido a la calculadora de costos del gimnasio");
         System.out.println("Seleccione el plan deseado:");
         System.out.println("1. Plan 15 días - $" + PRECIO_15_DIAS);
@@ -21,7 +21,7 @@ public class GymCalculator {
         int costo = 0;
         String plan = "";
         
-        // Calcular el costo según la opción seleccionada
+        // Calcular el costo del gym
         switch (opcion) {
             case 1:
                 costo = PRECIO_15_DIAS;
@@ -41,7 +41,7 @@ public class GymCalculator {
                 return;
         }
         
-        // Mostrar resultado
+        
         System.out.println("\nResumen de su selección:");
         System.out.println("Plan seleccionado: " + plan);
         System.out.println("Costo total: $" + costo);
